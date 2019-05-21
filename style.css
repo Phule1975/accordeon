@@ -41,6 +41,7 @@ li {
   text-decoration: none;
   padding: 14px 20px;
   border-radius: 20px;
+  color: white;
 }
 .acco__link:after {
   content: "";
@@ -66,12 +67,15 @@ li {
 .acco__items:nth-child(even) {
   background: #e7e7e7;
 }
+.acco__items:nth-child(even) a {
+  color: #4f4f4f;
+}
 .acco__items:last-child {
   margin-bottom: 0;
 }
 .acco__items.is-active .acco__link {
   color: white;
-  background-color: #ff8663;
+  background: #ff8663;
 }
 .acco__items.is-active .acco__link:after {
   transform: rotate(-180deg);
@@ -79,6 +83,8 @@ li {
 }
 
 .acco__desk {
+  background: #e7e7e7;
+  border-radius: 0 0 20px 20px;
   height: 0;
   overflow: hidden;
   transition: height 0.9s;

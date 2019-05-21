@@ -41,6 +41,7 @@ li {
     text-decoration: none;
     padding: 14px 20px;
     border-radius: 20px;
+    color: white;
 
     &:after {
         content: "";
@@ -63,8 +64,12 @@ li {
     background: #696666;
     margin-bottom: 5px;
     border-radius: 20px;
+
     &:nth-child(even) {
         background: #e7e7e7;
+        a {
+            color: #4f4f4f;
+        }
     }
     &:last-child {
         margin-bottom: 0;
@@ -73,7 +78,7 @@ li {
     &.is-active {
         .acco__link {
             color: white;
-            background-color: #ff8663;
+            background: #ff8663;
             &:after {
                 transform: rotate(-180deg);
                 border-top: 12px solid white;
@@ -83,7 +88,8 @@ li {
 }
 
 .acco__desk {
-    
+    background: #e7e7e7;
+    border-radius: 0 0 20px 20px;
     height: 0;
     overflow: hidden;
     transition: height 0.9s;
